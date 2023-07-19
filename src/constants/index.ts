@@ -1,3 +1,4 @@
 import ROUTES from './routes';
+import LANGUAGES from './languages';
 
-export { ROUTES };
+export { ROUTES, LANGUAGES };

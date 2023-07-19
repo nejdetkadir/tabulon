@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
-import { View, Text } from 'react-native';
+import React from 'react';
+import { View, Text, Pressable } from 'react-native';
 
-import { useNavigation } from '@react-navigation/native';
+import LinearGradient from 'react-native-linear-gradient';
 
 import { useLocale } from '@app/hooks';
 
@@ -9,20 +9,19 @@ const Home: React.FC = () => {
   const SCOPE_OPTIONS = {
     scope: 'screens.Home',
   };
-
-  const navigation = useNavigation();
-  const { t } = useLocale();
-
-  useEffect(() => {
-    navigation.setOptions({
-      title: t('labels.title', SCOPE_OPTIONS),
-    });
-  }, []);
+  const { t, changeLocale } = useLocale();
 
   return (
-    <View className="flex-1 justify-center items-center">
-      <Text>{t('labels.title', SCOPE_OPTIONS)}</Text>
-    </View>
+    <LinearGradient colors={['#818cf8', '#8b5cf6', '#9333ea']} style={{ gap: 50 }} className="flex-1 justify-center items-center">
+      <View style={{ gap: 15 }} className="w-2/5 flex-col">
+        <Pressable className="bg-green-500 p-4 rounded-full active:bg-green-600 shadow border border-white" onPress={() => {}}>
+          <Text className="text-white font-bold text-center uppercase">{t('actions.start', SCOPE_OPTIONS)}</Text>
+        </Pressable>
+        <Pressable className="bg-green-500 p-4 rounded-full active:bg-green-600 shadow border border-white" onPress={() => {}}>
+          <Text className="text-white font-bold text-center uppercase">{t('actions.settings', SCOPE_OPTIONS)}</Text>
+        </Pressable>
+      </View>
+    </LinearGradient>
   );
 };
 

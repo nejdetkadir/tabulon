@@ -18,7 +18,7 @@ import Routes from '@app/routes';
 function App(): JSX.Element {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <StatusBar barStyle="dark-content" />
+      <StatusBar barStyle="light-content" />
       <SafeAreaProvider>
         <LocaleProvider>
           <NavigationContainer>

@@ -15,6 +15,7 @@ module.exports = {
           '@app/hooks': './src/hooks',
           '@app/lib': './src/lib',
           '@app/routes': './src/routes',
+          '@app/icons': './src/assets/icons',
         },
       },
     ],

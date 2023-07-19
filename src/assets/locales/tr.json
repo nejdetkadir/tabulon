@@ -2,8 +2,9 @@
   "components": {},
   "screens": {
     "Home": {
-      "labels": {
-        "title": "Ana Sayfa"
+      "actions": {
+        "start": "Başla",
+        "settings": "Ayarlar"
       }
     }
   }
