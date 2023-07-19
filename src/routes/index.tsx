@@ -10,7 +10,13 @@ const Stack = createNativeStackNavigator();
 const Routes: React.FC = () => {
   return (
     <Stack.Navigator initialRouteName={ROUTES.HOME}>
-      <Stack.Screen name={ROUTES.HOME} component={HomeScreen} />
+      <Stack.Screen
+        options={{
+          headerShown: false,
+        }}
+        name={ROUTES.HOME}
+        component={HomeScreen}
+      />
     </Stack.Navigator>
   );
 };

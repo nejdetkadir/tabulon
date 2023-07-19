@@ -2,8 +2,9 @@
   "components": {},
   "screens": {
     "Home": {
-      "labels": {
-        "title": "Home"
+      "actions": {
+        "start": "Start",
+        "settings": "Settings"
       }
     }
   }

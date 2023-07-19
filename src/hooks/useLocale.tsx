@@ -7,6 +7,8 @@ import lodash from 'lodash';
 import type { Locale } from 'react-native-localize';
 import type { TranslateOptions } from 'i18n-js';
 
+import { LANGUAGES } from '@app/constants';
+
 type ReturnTypes = {
   t: (scope: string, options?: { [key: string]: string | number }) => string;
   locale: string;
@@ -14,13 +16,13 @@ type ReturnTypes = {
   languageTag: string;
 };
 
-const DEFAULT_LANGUAGE_CODE = 'tr';
+const DEFAULT_LANGUAGE_CODE = LANGUAGES.TURKISH;
 const DEFAULT_LANGUAGE_TAG = 'tr-TR';
 
 const LocaleContext = createContext({} as ReturnTypes);
 const translationGetters = {
-  en: require('../assets/locales/en.json'),
-  tr: require('../assets/locales/tr.json'),
+  [LANGUAGES.ENGLISH]: require('../assets/locales/en.json'),
+  [LANGUAGES.TURKISH]: require('../assets/locales/tr.json'),
 };
 
 const i18n = new I18n(translationGetters);

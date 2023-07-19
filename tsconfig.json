@@ -11,6 +11,7 @@
       "@app/hooks": ["src/hooks"],
       "@app/lib": ["src/lib"],
       "@app/routes": ["src/routes"],
+      "@app/icons": ["src/assets/icons"]
     }
   },
   "extends": "@tsconfig/react-native/tsconfig.json"
