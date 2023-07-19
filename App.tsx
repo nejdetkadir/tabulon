@@ -12,7 +12,7 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { NavigationContainer } from '@react-navigation/native';
 
-import Routes from './src/routes';
+import Routes from '@app/routes';
 
 function App(): JSX.Element {
   return (
