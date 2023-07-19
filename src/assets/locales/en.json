@@ -1,5 +1,19 @@
 {
-  "components": {},
+  "components": {
+    "SettingsModal": {
+      "labels": {
+        "roundDuration": "Round duration",
+        "roundCount": "Round count",
+        "teamCount": "Team count",
+        "passCount": "Pass count",
+        "language": "Language",
+        "seconds": "sec."
+      },
+      "actions": {
+        "close": "Close"
+      }
+    }
+  },
   "screens": {
     "Home": {
       "actions": {
