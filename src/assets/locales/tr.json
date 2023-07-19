@@ -1,5 +1,19 @@
 {
-  "components": {},
+  "components": {
+    "SettingsModal": {
+      "labels": {
+        "roundDuration": "Tur süresi",
+        "roundCount": "Tur sayısı",
+        "teamCount": "Takım sayısı",
+        "passCount": "Pas sayısı",
+        "language": "Dil",
+        "seconds": "sn."
+      },
+      "actions": {
+        "close": "Kapat"
+      }
+    }
+  },
   "screens": {
     "Home": {
       "actions": {

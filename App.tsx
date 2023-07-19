@@ -13,6 +13,7 @@ import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { NavigationContainer } from '@react-navigation/native';
 
 import { LocaleProvider } from '@app/hooks/useLocale';
+import { SettingsProvider } from '@app/hooks/useSettings';
 import Routes from '@app/routes';
 
 function App(): JSX.Element {
@@ -21,9 +22,11 @@ function App(): JSX.Element {
       <StatusBar barStyle="light-content" />
       <SafeAreaProvider>
         <LocaleProvider>
-          <NavigationContainer>
-            <Routes />
-          </NavigationContainer>
+          <SettingsProvider>
+            <NavigationContainer>
+              <Routes />
+            </NavigationContainer>
+          </SettingsProvider>
         </LocaleProvider>
       </SafeAreaProvider>
     </GestureHandlerRootView>

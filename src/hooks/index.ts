@@ -1,3 +1,4 @@
 import useLocale from './useLocale';
+import useSettings from './useSettings';
 
-export { useLocale };
+export { useLocale, useSettings };
