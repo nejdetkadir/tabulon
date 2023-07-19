@@ -12,6 +12,7 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { NavigationContainer } from '@react-navigation/native';
 
+import { LocaleProvider } from '@app/hooks/useLocale';
 import Routes from '@app/routes';
 
 function App(): JSX.Element {
@@ -19,9 +20,11 @@ function App(): JSX.Element {
     <GestureHandlerRootView style={{ flex: 1 }}>
       <StatusBar barStyle="dark-content" />
       <SafeAreaProvider>
-        <NavigationContainer>
-          <Routes />
-        </NavigationContainer>
+        <LocaleProvider>
+          <NavigationContainer>
+            <Routes />
+          </NavigationContainer>
+        </LocaleProvider>
       </SafeAreaProvider>
     </GestureHandlerRootView>
   );

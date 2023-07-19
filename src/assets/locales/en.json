@@ -1,0 +1,10 @@
+{
+  "components": {},
+  "screens": {
+    "Home": {
+      "labels": {
+        "title": "Home"
+      }
+    }
+  }
+}
