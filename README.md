@@ -1,8 +1,34 @@
+# TABULON
+
+Tabulon is a mobile game that is a clone of the taboo game. The game is played in teams of two or more. The goal of the game is to get your team to guess the word on the card without using the taboo words. The game is played in rounds. Each round is 60 seconds. The team with the most points at the end of the game wins.
+
+## Screenshots
+
+#### Home Screen
+
+![menu](docs/screenshots/menu.png)
+
+#### Settings Screen
+
+![settings](docs/screenshots/settings.png)
+
+#### Starting a Game
+
+![game](docs/screenshots/starting-team.png)
+
+#### Playing a Game
+
+![game](docs/screenshots/in-round.png)
+
+#### Next Round
+
+![game](docs/screenshots/end-round.png)
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+> **Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
 ## Step 1: Start the Metro Server
 
