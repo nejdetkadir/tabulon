@@ -4,7 +4,6 @@ import lodash from 'lodash';
 import { gameLib } from '@app/lib';
 import { useSettings } from '@app/hooks';
 import { WORDS } from '@app/db';
-// import { GameState } from '@app/types/app';
 
 type ReturnTypes = {
   currentRound: RoundType;
