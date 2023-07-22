@@ -1,1 +1,3 @@
-export {};
+import gameLib from './game';
+
+export { gameLib };

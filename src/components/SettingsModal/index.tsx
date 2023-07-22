@@ -21,7 +21,7 @@ type RoundDurationItemTypes = {
   value: number;
 };
 
-const TEAM_COUNT_OPTIONS = Array.from({ length: 6 }, (_, index) => index + 1);
+const TEAM_COUNT_OPTIONS = Array.from({ length: 5 }, (_, index) => index + 2);
 
 const PASS_COUNT_SLIDER_OPTIONS = {
   minimumValue: 0,

@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext, useEffect } from 'react';
+import React, { createContext, useState, useContext } from 'react';
 
 type ReturnTypes = {
   teamCount: number;
@@ -11,7 +11,7 @@ type ReturnTypes = {
   setRoundCount: (roundCount: number) => void;
 };
 
-const DEFAULT_TEAM_COUNT = 1;
+const DEFAULT_TEAM_COUNT = 2;
 const DEFAULT_ROUND_DURATION = 60;
 const DEFAULT_PASS_COUNT = 3;
 const DEFAULT_ROUND_COUNT = 2;

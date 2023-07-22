@@ -14,6 +14,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import { LocaleProvider } from '@app/hooks/useLocale';
 import { SettingsProvider } from '@app/hooks/useSettings';
+import { GameProvider } from '@app/hooks/useGame';
 import Routes from '@app/routes';
 
 function App(): JSX.Element {
@@ -23,9 +24,11 @@ function App(): JSX.Element {
       <SafeAreaProvider>
         <LocaleProvider>
           <SettingsProvider>
-            <NavigationContainer>
-              <Routes />
-            </NavigationContainer>
+            <GameProvider>
+              <NavigationContainer>
+                <Routes />
+              </NavigationContainer>
+            </GameProvider>
           </SettingsProvider>
         </LocaleProvider>
       </SafeAreaProvider>

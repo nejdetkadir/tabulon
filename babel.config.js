@@ -26,6 +26,7 @@ module.exports = {
           '@app/lib': './src/lib',
           '@app/routes': './src/routes',
           '@app/icons': './src/assets/icons',
+          '@app/db': './src/db',
         },
       },
     ],
