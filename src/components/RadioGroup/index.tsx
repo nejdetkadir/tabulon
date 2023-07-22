@@ -20,7 +20,9 @@ const RadioGroup = ({ gap, direction, data, renderItem }: RadioGroupPropTypes) =
         'flex-col': direction === 'vertical',
       })}
     >
-      {data.map((item, index: number) => renderItem(item, index))}
+      {data.map((item, index: number) => (
+        <View key={index}>{renderItem(item, index)}</View>
+      ))}
     </View>
   );
 };

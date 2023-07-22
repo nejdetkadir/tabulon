@@ -12,6 +12,58 @@
       "actions": {
         "close": "Close"
       }
+    },
+    "Game": {
+      "EndOfRound": {
+        "View": {
+          "labels": {
+            "nextTeam": "Next team"
+          }
+        },
+        "BottomBar": {
+          "actions": {
+            "startRound": "Start round"
+          }
+        }
+      },
+      "InRound": {
+        "TopBar": {
+          "labels": {
+            "score": "Score: {{score}}",
+            "time": "Time:"
+          }
+        },
+        "BottomBar": {
+          "actions": {
+            "pass": "Pass",
+            "correctAnswer": "Correct",
+            "tabulon": "Tabulon"
+          }
+        }
+      },
+      "Scoreboard": {
+        "View": {
+          "labels": {
+            "scoreboard": "Scoreboard",
+            "score": "Score: {{score}}"
+          },
+          "actions": {
+            "finish": "Finish"
+          }
+        }
+      },
+      "WaitingRound": {
+        "View": {
+          "labels": {
+            "startingTeam": "Starting team"
+          }
+        },
+        "BottomBar": {
+          "actions": {
+            "ready": "Ready"
+          }
+        }
+      }
     }
   },
   "screens": {

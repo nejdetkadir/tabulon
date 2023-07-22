@@ -8,6 +8,7 @@ import type { Locale } from 'react-native-localize';
 import type { TranslateOptions } from 'i18n-js';
 
 import { LANGUAGES } from '@app/constants';
+import { storageLib } from '@app/lib';
 
 type ReturnTypes = {
   t: (scope: string, options?: { [key: string]: string | number }) => string;
@@ -42,7 +43,7 @@ function getDefaultLocale() {
   return DEFAULT_LANGUAGE_CODE;
 }
 
-const defaultLocale = getDefaultLocale();
+const defaultLocale = storageLib.getLocale() || getDefaultLocale();
 
 export const LocaleProvider: React.FC<React.PropsWithChildren> = ({ children }) => {
   const [locale, setLocale] = useState<string>(defaultLocale);
@@ -50,6 +51,7 @@ export const LocaleProvider: React.FC<React.PropsWithChildren> = ({ children }) 
   i18n.locale = locale;
 
   function changeLocale(localeParam: string) {
+    storageLib.setLocale(localeParam);
     setLocale(localeParam);
   }
 
@@ -60,7 +62,7 @@ export const LocaleProvider: React.FC<React.PropsWithChildren> = ({ children }) 
   return (
     <LocaleContext.Provider
       value={{
-        t: t,
+        t,
         locale,
         changeLocale,
         languageTag: deviceLocale?.languageTag || DEFAULT_LANGUAGE_TAG,

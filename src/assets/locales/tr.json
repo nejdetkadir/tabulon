@@ -12,6 +12,58 @@
       "actions": {
         "close": "Kapat"
       }
+    },
+    "Game": {
+      "EndOfRound": {
+        "View": {
+          "labels": {
+            "nextTeam": "Sıradaki takım"
+          }
+        },
+        "BottomBar": {
+          "actions": {
+            "startRound": "Turu başlat"
+          }
+        }
+      },
+      "InRound": {
+        "TopBar": {
+          "labels": {
+            "score": "Skor: {{score}}",
+            "time": "Süre:"
+          }
+        },
+        "BottomBar": {
+          "actions": {
+            "pass": "Pas",
+            "correctAnswer": "Doğru",
+            "tabulon": "Tabulon"
+          }
+        }
+      },
+      "Scoreboard": {
+        "View": {
+          "labels": {
+            "scoreboard": "Skor Tablosu",
+            "score": "Skor: {{score}}"
+          },
+          "actions": {
+            "finish": "Oyunu bitir"
+          }
+        }
+      },
+      "WaitingRound": {
+        "View": {
+          "labels": {
+            "startingTeam": "Başlayacak takım"
+          }
+        },
+        "BottomBar": {
+          "actions": {
+            "ready": "Hazır"
+          }
+        }
+      }
     }
   },
   "screens": {
