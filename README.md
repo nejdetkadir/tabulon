@@ -4,25 +4,9 @@ Tabulon is a mobile game that is a clone of the taboo game. The game is played i
 
 ## Screenshots
 
-#### Home Screen
-
-![menu](docs/screenshots/menu.png)
-
-#### Settings Screen
-
-![settings](docs/screenshots/settings.png)
-
-#### Starting a Game
-
-![game](docs/screenshots/starting-team.png)
-
-#### Playing a Game
-
-![game](docs/screenshots/in-round.png)
-
-#### Next Round
-
-![game](docs/screenshots/end-round.png)
+| Settings                                   | Home                               | Starting a Game                             | Playing a Game                         | Next Round                              |
+| ------------------------------------------ | ---------------------------------- | ------------------------------------------- | -------------------------------------- | --------------------------------------- |
+| ![settings](docs/screenshots/settings.png) | ![menu](docs/screenshots/menu.png) | ![game](docs/screenshots/starting-team.png) | ![game](docs/screenshots/in-round.png) | ![game](docs/screenshots/end-round.png) |
 
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
